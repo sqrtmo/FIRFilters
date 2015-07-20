@@ -9,7 +9,7 @@ Packet
 ----------------------------------
 #####EMA - exponential moving average
 #####EMD - exponential moving deviation
-#####SMA - simple moving average          //not ready yet
-
+#####SMA - simple moving average  
+#####MM  - moving median
 
 
