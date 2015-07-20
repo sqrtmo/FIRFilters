@@ -1,38 +1,25 @@
-//
-// File			LocalLibrary.h
-// Brief		Library header
-//
-// Project	 	filters
-// Developed with [embedXcode](http://embedXcode.weebly.com)
-// 
-// Author		sqrtmo
-// 				sqrtmo
-// Date			5/6/15 15:03
-// Version		1.0
-// 
-// Copyright	© sqrtmo, 2015
-// Licence		free
-//
-// See			ReadMe.txt for references
-//
-
 #include "Arduino.h"
 
 #ifndef FIRFilters_h
 #define FIRFilters_h
 
+int cmp( int *num1, int *num2 );
+
+template< typename T >
 class filters
 {
     
 private:
     int emaPrev;
+    int y1Prev, y2Prev;
     
 public:
-    int EMA( int in, float alpha );
-    int SMA( int in, uint8_t bufferSize );
-    
-    int clip( int16_t in, int16_t min, int16_t max );
+    int EMA( T in, float alpha );
+    int EMD( T in, float alpha );
+    int SMA( T in, T buffer[], T bufferSize );
+    int MM ( T in, T buffer[], T bufferSize );
+        
+    int clip( T in, T min, T max );
 };
-
-
 #endif
+
