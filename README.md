@@ -11,5 +11,5 @@ Packet
 #####EMD - exponential moving deviation
 #####SMA - simple moving average  
 #####MM  - moving median
-####clip - clip
+#####clip - clip
 
