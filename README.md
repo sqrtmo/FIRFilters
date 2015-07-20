@@ -3,7 +3,7 @@ Finite impulse response filters library for Arduino.
 
 References
 ----------------------------------
-see: http://en.wikipedia.org/wiki/Moving_average#Simple_moving_average 
+see: https://en.wikipedia.org/wiki/Moving_average
 
 Packet
 ----------------------------------
